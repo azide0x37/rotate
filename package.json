@@ -3,12 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "aws-amplify": "^0.4.8",
+    "aws-amplify-react": "^0.1.54",
+    "awsmobile-cli": "^1.1.4",
+    "enzyme": "^3.3.0",
     "loadash": "^1.0.0",
     "node-uuid": "^1.4.8",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-images-upload": "^1.1.99",
     "react-localforage": "^1.0.1",
     "react-scripts": "1.1.4",
+    "react-testing-library": "^4.1.0",
     "semantic-ui-css": "^2.3.2",
     "semantic-ui-react": "^0.81.3"
   },
@@ -17,5 +23,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-test-renderer": "^16.4.1"
   }
 }
