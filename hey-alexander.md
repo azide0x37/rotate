@@ -16,6 +16,8 @@ Fortunately, our publication is resonating, as a thought leader in Med Tech thin
 
 I want to share with you more of the vision that I have regarding this issue and am hoping you'd be open to a call at some point. If so, please email me [avery@mend.ai](mailto:avery@mend.ai), and I'll be sure to respond.
 
+- Avery
+
 P.S.
 
 I also sent you a friend request on LinkedIn.
