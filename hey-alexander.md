@@ -1,6 +1,6 @@
 Hi Alexander,
 
-My name is Avery Smith . We have yet to meet but I came across your info on the site, [founder2be.com](https://www.founder2be.com/index.php/azide0x37/).
+My name is Avery Smith. We have yet to meet but I came across your info on the site, [founder2be.com](https://www.founder2be.com/index.php/azide0x37/).
 
 The following quote from your profile stood out to me:
 
