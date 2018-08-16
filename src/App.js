@@ -23,7 +23,7 @@ export default class App extends Component {
   state = {
     route: 'listings',
   }
-
+// withAuthenticator()
   componentDidMount() {
 //  API.get(apiName, path).then(response => {
 //    console.log(response)
@@ -45,7 +45,7 @@ export default class App extends Component {
              <Grid.Column>
                { route === 'listings' ? <AircraftListings /> : null }
                { route === 'efficiency' ? <div><h1>efficiency</h1></div> : null }
-               { route === 'flightlevels' ? withAuthenticator(<div><h1>flightlevels</h1></div>) : null }
+               { route === 'flightlevels' ? <div><h1>flightlevels</h1></div> : null }
              </Grid.Column>
            </Grid.Row>
          </Grid>
