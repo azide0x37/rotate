@@ -1,6 +1,11 @@
 import React, {
 	Component
 } from 'react';
+import Amplify, {
+	//API,
+	Auth,
+	Storage
+} from 'aws-amplify';
 
 import ImageUploader from 'react-images-upload';
 

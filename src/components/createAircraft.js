@@ -10,7 +10,7 @@ import {
 
 import { API } from 'aws-amplify';
 
-import AircraftImageUploader from './imageUploader'
+//import AircraftImageUploader from './imageUploader'
 
 const uuidv1 = require('uuid/v1');
 

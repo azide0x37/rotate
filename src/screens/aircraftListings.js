@@ -11,7 +11,9 @@ import {
 
 import CreateAircraft from '../components/createAircraft'
 
-import { API } from 'aws-amplify';
+import {
+  API
+} from 'aws-amplify';
 import _ from 'lodash';
 
 

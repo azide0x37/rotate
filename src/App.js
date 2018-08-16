@@ -3,12 +3,15 @@ import './App.css';
 import Amplify from 'aws-amplify';
 import {withAuthenticator} from 'aws-amplify-react'
 import {
-  Icon,
-  Menu,
+  Grid,
   Segment
 } from 'semantic-ui-react'
 
+import MainMenu from './components/mainMenu';
+
 import AircraftListings from './screens/aircraftListings'
+//import Efficiency from './screens/efficiency'
+//import FlightLevels from './screens/flightLevels'
 
 import aws_exports from './aws-exports';
 Amplify.configure(aws_exports);
@@ -16,25 +19,37 @@ Amplify.configure(aws_exports);
 //let apiName = 'AircraftCRUD';
 //let path = '/Aircraft';
 
-class App extends Component {
+export default class App extends Component {
+  state = {
+    route: 'listings',
+  }
+
   componentDidMount() {
 //  API.get(apiName, path).then(response => {
 //    console.log(response)
 //  });
   }
 
+  handleItemClick = (e, { name }) => {
+    this.setState({ activeItem: name })
+    this.props.updateRoute(name)
+  }
+
   render() {
+    const { route } = this.state
     return (
       <Segment>
-        <Menu>
-           <Menu.Item name='home'> <Icon name="shop"/></Menu.Item>
-           <Menu.Item name='Items'/>
-           <Menu.Item name='aboutUs' />
-         </Menu>
-         <AircraftListings />
+        <MainMenu updateRoute={(route) => this.setState({route: route})}  />
+         <Grid>
+           <Grid.Row>
+             <Grid.Column>
+               { route === 'listings' ? <AircraftListings /> : null }
+               { route === 'efficiency' ? <div><h1>efficiency</h1></div> : null }
+               { route === 'flightlevels' ? withAuthenticator(<div><h1>flightlevels</h1></div>) : null }
+             </Grid.Column>
+           </Grid.Row>
+         </Grid>
       </Segment>
     );
   }
 }
-
-export default withAuthenticator(App);
