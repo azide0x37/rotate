@@ -10,7 +10,7 @@
     "loadash": "^1.0.0",
     "node-uuid": "^1.4.8",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react-dom": "^16.4.2",
     "react-images-upload": "^1.1.99",
     "react-localforage": "^1.0.1",
     "react-scripts": "1.1.4",
